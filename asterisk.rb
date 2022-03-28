@@ -10,27 +10,27 @@ class Asterisk < Formula
     sha256 "cf8c444fc7fe38d5761852d780fb4e8284f43df716f1a649e862ec186158f711"
   end
 
-#  devel do
-#    url "https://github.com/asterisk/asterisk.git", :branch => "15"
-#    version "15-devel"
+  # devel do
+  #   url "https://github.com/asterisk/asterisk.git", :branch => "15"
+  #   version "15-devel"
 
-    # Fixes for bugs introduced on 15 branch
-    patch do
-      url "https://github.com/leedm777/asterisk/commit/5e9d11fb518f8072d0f3d57ec4c3303431e849d4.patch"
-      sha256 "3b3fd91ea4580572baefb85adf8d7ae544e38255efa4d9f071a560b1cd05ea9e"
-    end
-#  end
+  #   # Fixes for bugs introduced on 15 branch
+  #   patch do
+  #     url "https://github.com/leedm777/asterisk/commit/5e9d11fb518f8072d0f3d57ec4c3303431e849d4.patch"
+  #     sha256 "3b3fd91ea4580572baefb85adf8d7ae544e38255efa4d9f071a560b1cd05ea9e"
+  #   end
+  # end
 
-  head do
-    url "https://github.com/asterisk/asterisk.git"
-    version "head"
+  # head do
+  #   url "https://github.com/asterisk/asterisk.git"
+  #   version "head"
 
-    # Fixes for bugs introduced on 15 branch
-    patch do
-      url "https://github.com/leedm777/asterisk/commit/5e9d11fb518f8072d0f3d57ec4c3303431e849d4.patch"
-      sha256 "3b3fd91ea4580572baefb85adf8d7ae544e38255efa4d9f071a560b1cd05ea9e"
-    end
-  end
+  #   # Fixes for bugs introduced on 15 branch
+  #   patch do
+  #     url "https://github.com/leedm777/asterisk/commit/5e9d11fb518f8072d0f3d57ec4c3303431e849d4.patch"
+  #     sha256 "3b3fd91ea4580572baefb85adf8d7ae544e38255efa4d9f071a560b1cd05ea9e"
+  #   end
+  # end
 
   # backport fixes that are already on the 15 branch
   stable do
